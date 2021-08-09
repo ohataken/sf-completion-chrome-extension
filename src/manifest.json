@@ -1,0 +1,6 @@
+{
+  "name": "sf-completion-chrome-extension",
+  "description": "Salesforce への機械的な入力を助ける Google Chrome 拡張です。",
+  "version": "2021.809.1330",
+  "manifest_version": 3
+}
