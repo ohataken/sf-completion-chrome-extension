@@ -67,3 +67,8 @@ function evaluateJSON(object) {
   evaluateItems(object.items);
 }
 
+chrome.runtime.onMessage.addListener(async (req, sender, sendResponse) => {
+  evaluateJSON(JSON.parse(req.json));
+  sendResponse({});
+});
+

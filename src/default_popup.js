@@ -6,4 +6,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     e.stopPropagation();
     e.preventDefault();
 
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      chrome.tabs.sendMessage(tabs[0].id, { json: textarea.value }, (response) => {
+      });
+    });
+  });
+
 });
